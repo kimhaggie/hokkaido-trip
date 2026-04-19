@@ -659,6 +659,7 @@ footer {
 
 <div class="section-title">— 여행 일정</div>
 
+
 <div class="timeline">
 
   <div class="day">
@@ -669,7 +670,7 @@ footer {
     </div>
     <div class="day-body">
       <div class="day-head">
-        <span class="day-name">삿포로 도착</span>
+        <span class="day-name">후라노 도착</span>
         <span class="tag tag-arrive">도착일</span>
       </div>
       <div class="spots">
@@ -681,65 +682,386 @@ footer {
           </div>
         </div>
         <div class="spot">
-          <span class="spot-icon">🏙️</span>
+          <span class="spot-icon">🚗</span>
           <div class="spot-text">
-            <div class="spot-name">삿포로 시내</div>
-            <div class="spot-desc">오후 4시쯤 도착 · 체크인 · 저녁 식사</div>
+            <div class="spot-name">후라노로 이동</div>
+            <div class="spot-desc">약 2.5시간 · 저녁 도착 · 체크인</div>
           </div>
         </div>
       </div>
       <div class="map-embed">
-        
+
       </div>
       <div class="lmap-wrap"><div id="lmap-day1" class="lmap"></div></div>
       <script>
       window.addEventListener('load', function() {
         var m = L.map('lmap-day1', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
         L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:16}).addTo(m);
-        m.fitBounds([[42.7151, 141.2945], [43.1218, 141.7529]],{padding:[18,18]});
+        m.fitBounds([[42.7151, 141.6], [43.4011, 142.45]],{padding:[18,18]});
       L.circleMarker([42.7751,141.6929],{radius:7,color:'#fff',fillColor:'#e76f51',fillOpacity:1,weight:2}).addTo(m).bindTooltip('신치토세 공항',{permanent:false,direction:'top'});
-      L.circleMarker([43.0618,141.3545],{radius:7,color:'#fff',fillColor:'#2a9d8f',fillOpacity:1,weight:2}).addTo(m).bindTooltip('삿포로',{permanent:false,direction:'top'});
-        L.polyline([[42.7751, 141.6929], [43.0618, 141.3545]],{color:'#2a9d8f',weight:2.5,dashArray:'6,5',opacity:0.85}).addTo(m);
+      L.circleMarker([43.3411,142.3831],{radius:7,color:'#fff',fillColor:'#2a9d8f',fillOpacity:1,weight:2}).addTo(m).bindTooltip('후라노',{permanent:false,direction:'top'});
+        L.polyline([[42.7751, 141.6929], [43.3411, 142.3831]],{color:'#2a9d8f',weight:2.5,dashArray:'6,5',opacity:0.85}).addTo(m);
       });
       </script>
-      <a class="route-btn" href="https://maps.google.com/maps/dir/新千歳空港/札幌市" target="_blank">🗺 구글맵에서 루트 보기 · 신치토세 → 삿포로</a>
+      <a class="route-btn" href="https://maps.google.com/maps/dir/新千歳空港/富良野市" target="_blank">🗺 구글맵에서 루트 보기 · 신치토세 → 후라노</a>
 
       <div class="food-section">
-        <div class="food-header">— 오늘 저녁 추천</div>
+        <div class="food-header">— 후라노 도착 저녁 추천</div>
         <div class="food-cards">
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010303/1000134/">
-            <div class="food-card-top"><span class="food-card-name">すみれ 中の島本店</span><span class="food-score">★ 3.61</span><span class="res-required">예약 필수</span></div>
-            <div class="food-genre">라멘 · 百名店 선출</div>
-            <div class="food-desc">삿포로 미소라멘의 전설. 진한 돼지뼈 베이스에 버터 한 덩이. 줄 서는 집이지만 그만한 가치가 있음.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/すみれ+中の島本店+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1000940/">
+            <div class="food-card-top"><span class="food-card-name">菓子工房フラノデリス</span><span class="food-score">★ 3.66</span></div>
+            <div class="food-genre">디저트 · 후라노 랭킹 1위</div>
+            <div class="food-desc">후라노 대표 디저트 가게. 홋카이도 식재 사용 케이크·구움 과자. 후라노 와인 초콜릿도 인기.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/フラノデリス+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
           </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010101/1001102/">
-            <div class="food-card-top"><span class="food-card-name">根室花まる JRタワーステラプレイス店</span><span class="food-score">★ 3.67</span><span class="res-recommended">예약 추천</span></div>
-            <div class="food-genre">회전스시 · 삿포로역 직결</div>
-            <div class="food-desc">북해도 신선 재료 그대로. 스텔라플레이스 내 위치해 도착 당일 부담 없이 들르기 최적.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/根室花まる+JRタワーステラプレイス店" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1000063/">
+            <div class="food-card-top"><span class="food-card-name">唯我独尊</span><span class="food-score">★ 3.62</span></div>
+            <div class="food-genre">카레 · 후라노 명물 · 百名店</div>
+            <div class="food-desc">후라노 카레의 성지. 30년 이상 현지 사랑받는 집. 독특한 주문 방식. 저녁 도착 후 첫 밥으로 딱.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/唯我独尊+富良野市" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
           </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010103/1047150/">
-            <div class="food-card-top"><span class="food-card-name">ステーキ&ハンバーグ ひげ 南5条本店</span><span class="food-score">★ 3.62</span><span class="res-recommended">예약 추천</span></div>
-            <div class="food-genre">스테이크 · 햄버그 · 전국 TOP100</div>
-            <div class="food-desc">전국 햄버그 TOP1 선출. 북해도산 라무 햄버그가 특히 인기. 저녁 첫날 기념 식사로 적당.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/STEAK+HAMBURG+ひげ+6条店+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1016743/">
+            <div class="food-card-top"><span class="food-card-name">ふらのや</span><span class="food-score">★ 3.57</span></div>
+            <div class="food-genre">후라노 향토 요리 · 저녁 식사</div>
+            <div class="food-desc">후라노 현지 식재료 중심 향토 요리. 후라노 와인과 홋카이도 소고기 조합. 가족 단위 저녁 식사.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/ふらのや+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
           </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010105/1000080/">
-            <div class="food-card-top"><span class="food-card-name">森彦 (MORIHICO.)</span><span class="food-score">★ 3.68</span></div>
-            <div class="food-genre">카페 · 커피 · カフェ百名店 2025</div>
-            <div class="food-desc">1952년 고민가 개조 커피 전문점. 삿포로 커피 문화의 원점. 한 잔씩 핸드드립. KAPITAL 동선과 비교적 가깝고 저녁 전 잠깐 들르기 좋음.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/森彦+MORIHICO+円山公園+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010301/1000163/">
-            <div class="food-card-top"><span class="food-card-name">マジックスパイス 札幌本店</span><span class="food-score">★ 3.61</span></div>
-            <div class="food-genre">스프카레 · 百名店</div>
-            <div class="food-desc">스프카레 원조 1점포. 진한 코코넛 베이스, 독자적 "의식" 레벨 매운맛 시스템. 도야코 본점보다 접근성 좋음.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/Magic+Spice+札幌本店" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1000298/">
+            <div class="food-card-top"><span class="food-card-name">くまげら</span><span class="food-score">★ 3.52</span></div>
+            <div class="food-genre">향토 요리 · 이자카야 · 저녁</div>
+            <div class="food-desc">후라노 지역 인기 향토 이자카야. 홋카이도 산 사슴·곰고기 등 독특한 식재도 취급. 현지 분위기.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/くまげら+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
           </div>
         </div>
       </div>
-      
+
+      <div class="hotel-section">
+        <div class="hotel-hdr">🏨 숙소 — 후라노 (확정)</div>
+        <div class="hotel-grid">
+          <div class="hotel-card" onclick="window.open('https://www.airbnb.co.kr/rooms/1284346822614586800?source_impression_id=p3_1774703731_P3oTlVbxnLUB-it3','_blank')">
+              <div class="hcard-top">
+                <span class="hcard-name">에어비앤비 (후라노)</span>
+                <span class="hcard-grade">숙소 확정</span>
+              </div>
+              <div class="hcard-desc">에어비앤비 숙소. 상세 정보는 예약 확인서 참고.</div>
+              <div class="hcard-links">
+                <a class="hcard-bk" href="https://www.airbnb.co.kr/rooms/1284346822614586800?source_impression_id=p3_1774703731_P3oTlVbxnLUB-it3" target="_blank" onclick="event.stopPropagation()">🏠 에어비앤비</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="note">오늘은 이동일. 신치토세 공항 → 후라노 약 2.5시간. 도착 후 가볍게 저녁만.</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-gutter">
+      <div class="day-dot"></div>
+      <div class="day-num-big">02</div>
+      <div class="day-date-small">9월 2일 화</div>
+    </div>
+    <div class="day-body">
+      <div class="day-head">
+        <span class="day-name">후라노 / 팜 토미타</span>
+        <span class="tag tag-nature">자연</span>
+      </div>
+      <div class="spots">
+        <div class="spot">
+          <span class="spot-icon">🌸</span>
+          <div class="spot-text">
+            <div class="spot-name">팜 토미타</div>
+            <div class="spot-desc">코스모스 · 라벤더 소프트크림 · 10:00~16:00</div>
+          </div>
+        </div>
+        <div class="spot">
+          <span class="spot-icon">🧀</span>
+          <div class="spot-text">
+            <div class="spot-name">후라노 치즈공방</div>
+            <div class="spot-desc">치즈 · 버터 체험 · 아이스크림</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-embed">
+
+      </div>
+      <div class="lmap-wrap"><div id="lmap-day2" class="lmap"></div></div>
+      <script>
+      window.addEventListener('load', function() {
+        var m = L.map('lmap-day2', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:16}).addTo(m);
+        m.fitBounds([[43.28, 142.34], [43.52, 142.52]],{padding:[18,18]});
+      L.circleMarker([43.3411,142.3831],{radius:7,color:'#fff',fillColor:'#e76f51',fillOpacity:1,weight:2}).addTo(m).bindTooltip('후라노',{permanent:false,direction:'top'});
+      L.circleMarker([43.4528,142.4644],{radius:7,color:'#fff',fillColor:'#e8a87c',fillOpacity:1,weight:2}).addTo(m).bindTooltip('팜 토미타',{permanent:false,direction:'top'});
+      L.circleMarker([43.3550,142.3930],{radius:7,color:'#fff',fillColor:'#2a9d8f',fillOpacity:1,weight:2}).addTo(m).bindTooltip('치즈공방',{permanent:false,direction:'top'});
+        L.polyline([[43.3411,142.3831],[43.4528,142.4644],[43.3550,142.3930]],{color:'#2a9d8f',weight:2.5,dashArray:'6,5',opacity:0.85}).addTo(m);
+      });
+      </script>
+      <a class="route-btn" href="https://maps.google.com/maps/dir/富良野市/ファーム富田/富良野チーズ工房" target="_blank">🗺 구글맵에서 루트 보기 · 후라노 → 팜토미타 → 치즈공방</a>
+
+      <div class="food-section">
+        <div class="food-header">— 후라노 추천 맛집</div>
+        <div class="food-cards">
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1002223/">
+            <div class="food-card-top"><span class="food-card-name">ファーム富田</span><span class="food-score">★ 3.59</span></div>
+            <div class="food-genre">소프트크림 · 라벤더 명소</div>
+            <div class="food-desc">팜 토미타 내 라벤더 소프트아이스크림 원조. 9월에도 코스모스 핀 밭에서. 야외 즉석 판매.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/ファーム富田+ソフトクリーム" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1007772/">
+            <div class="food-card-top"><span class="food-card-name">富良野チーズ工房 アイスミルク工房</span><span class="food-score">★ 3.50</span></div>
+            <div class="food-genre">아이스크림 · 치즈공방</div>
+            <div class="food-desc">치즈공방 내 아이스크림 공방. 신선 우유 아이스크림 현장 제조. 팜 토미타와 동선 묶기 좋음.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/富良野チーズ工房" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1004122/">
+            <div class="food-card-top"><span class="food-card-name">自家焙煎珈琲店 Gosh</span><span class="food-score">★ 3.54</span></div>
+            <div class="food-genre">자가 로스팅 커피 · 카페</div>
+            <div class="food-desc">후라노·비에이 지역 자가 로스팅 커피 명가. 드라이브 중 한 잔 쉬어가기 좋음. 조용한 분위기.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/珈琲Gosh+美瑛+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1000940/">
+            <div class="food-card-top"><span class="food-card-name">菓子工房フラノデリス</span><span class="food-score">★ 3.66</span></div>
+            <div class="food-genre">디저트 · 후라노 랭킹 1위</div>
+            <div class="food-desc">후라노 대표 디저트 가게. 홋카이도 식재 사용 케이크·구움 과자. 후라노 와인 초콜릿도 인기.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/フラノデリス+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1000063/">
+            <div class="food-card-top"><span class="food-card-name">唯我独尊</span><span class="food-score">★ 3.62</span></div>
+            <div class="food-genre">카레 · 후라노 명물 · 百名店</div>
+            <div class="food-desc">후라노 카레의 성지. 30년 이상 현지 사랑받는 집. 독특한 주문 방식.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/唯我独尊+富良野市" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1016743/">
+            <div class="food-card-top"><span class="food-card-name">ふらのや</span><span class="food-score">★ 3.57</span></div>
+            <div class="food-genre">후라노 향토 요리 · 저녁 식사</div>
+            <div class="food-desc">후라노 현지 식재료 중심 향토 요리. 후라노 와인과 홋카이도 소고기 조합. 가족 단위 저녁 식사.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/ふらのや+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1000298/">
+            <div class="food-card-top"><span class="food-card-name">くまげら</span><span class="food-score">★ 3.52</span></div>
+            <div class="food-genre">향토 요리 · 이자카야 · 저녁</div>
+            <div class="food-desc">후라노 지역 인기 향토 이자카야. 홋카이도 산 사슴·곰고기 등 독특한 식재도 취급. 현지 분위기.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/くまげら+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="note">후라노 숙소에서 팜 토미타·치즈공방 하루 코스. 여유롭게 후라노 만끽.</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-gutter">
+      <div class="day-dot"></div>
+      <div class="day-num-big">03</div>
+      <div class="day-date-small">9월 3일 수</div>
+    </div>
+    <div class="day-body">
+      <div class="day-head">
+        <span class="day-name">비에이 드라이브</span>
+        <span class="tag tag-nature">자연</span>
+      </div>
+      <div class="spots">
+        <div class="spot">
+          <span class="spot-icon">🚲</span>
+          <div class="spot-text">
+            <div class="spot-name">비에이 전기자전거 대여</div>
+            <div class="spot-desc">비에이역 앞 렌탈샵 · 전기자전거 3,000~3,500엔/일 · 세븐스타~켄과 메리 구간 추천 · 🔋아빠 강추</div>
+          </div>
+        </div>
+        <div class="spot">
+          <span class="spot-icon">🌲</span>
+          <div class="spot-text">
+            <div class="spot-name">세븐스타 나무</div>
+            <div class="spot-desc">패치워크 로드 시작 · 파노라마 구릉 뷰</div>
+          </div>
+        </div>
+        <div class="spot">
+          <span class="spot-icon">🌳</span>
+          <div class="spot-text">
+            <div class="spot-name">켄과 메리의 나무</div>
+            <div class="spot-desc">포플러 나무 · 닛산 광고 배경</div>
+          </div>
+        </div>
+        <div class="spot">
+          <span class="spot-icon">🌿</span>
+          <div class="spot-text">
+            <div class="spot-name">마일드세븐 언덕</div>
+            <div class="spot-desc">탁 트인 구릉 전망</div>
+          </div>
+        </div>
+        <div class="spot">
+          <span class="spot-icon">🎄</span>
+          <div class="spot-text">
+            <div class="spot-name">크리스마스트리 나무</div>
+            <div class="spot-desc">일몰 무렵 방문 추천</div>
+          </div>
+        </div>
+        <div class="spot">
+          <span class="spot-icon">💧</span>
+          <div class="spot-text">
+            <div class="spot-name">흰수염 폭포</div>
+            <div class="spot-desc">코발트블루 물줄기 · 아오이이케 바로 옆</div>
+          </div>
+        </div>
+        <div class="spot">
+          <span class="spot-icon">🔵</span>
+          <div class="spot-text">
+            <div class="spot-name">아오이이케 (청의 호수)</div>
+            <div class="spot-desc">8:00~21:00 · 코발트블루 호수</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-embed">
+
+      </div>
+      <div class="lmap-wrap"><div id="lmap-day3" class="lmap"></div></div>
+      <script>
+      window.addEventListener('load', function() {
+        var m = L.map('lmap-day3', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:16}).addTo(m);
+        m.fitBounds([[43.28, 142.34], [43.68, 142.56]],{padding:[18,18]});
+      L.circleMarker([43.3411,142.3831],{radius:7,color:'#fff',fillColor:'#e76f51',fillOpacity:1,weight:2}).addTo(m).bindTooltip('후라노',{permanent:false,direction:'top'});
+      L.circleMarker([43.5897,142.4622],{radius:7,color:'#fff',fillColor:'#e8a87c',fillOpacity:1,weight:2}).addTo(m).bindTooltip('세븐스타 나무',{permanent:false,direction:'top'});
+      L.circleMarker([43.6078,142.4992],{radius:7,color:'#fff',fillColor:'#2a9d8f',fillOpacity:1,weight:2}).addTo(m).bindTooltip('아오이이케',{permanent:false,direction:'top'});
+        L.polyline([[43.3411,142.3831],[43.5897,142.4622],[43.6078,142.4992],[43.3411,142.3831]],{color:'#2a9d8f',weight:2.5,dashArray:'6,5',opacity:0.85}).addTo(m);
+      });
+      </script>
+      <a class="route-btn" href="https://maps.google.com/maps/dir/富良野市/セブンスターの木/ケンとメリーの木/白ひげの滝/青い池美瑛/富良野市" target="_blank">🗺 구글맵에서 루트 보기 · 후라노 → 비에이 드라이브</a>
+
+      <div class="food-section">
+        <div class="food-header">— 비에이·후라노 드라이브 중 추천 맛집</div>
+        <div class="food-cards">
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1004122/">
+            <div class="food-card-top"><span class="food-card-name">自家焙煎珈琲店 Gosh</span><span class="food-score">★ 3.54</span></div>
+            <div class="food-genre">카페 · 자가 로스팅 커피</div>
+            <div class="food-desc">후라노·비에이 지역 자가 로스팅 커피 명가. 드라이브 중 한 잔 쉬어가기 좋음. 조용한 분위기.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/珈琲Gosh+美瑛+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1055790/">
+            <div class="food-card-top"><span class="food-card-name">フェルム ラ・テール 美瑛</span><span class="food-score">★ 3.41</span></div>
+            <div class="food-genre">베이커리 · 카페 · 비에이 직영</div>
+            <div class="food-desc">비에이 농장 직영 베이커리 카페. 비에이 밀 빵·스콘·소프트크림. 언덕 드라이브 중 점심으로.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/フェルムラテール美瑛" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1007771/">
+            <div class="food-card-top"><span class="food-card-name">富良野チーズ工房 ピッツァ工房</span><span class="food-score">★ 3.48</span></div>
+            <div class="food-genre">피자 · 치즈공방</div>
+            <div class="food-desc">후라노 치즈공방 내 피자 공방. 현장에서 직접 구운 피자. 홋카이도 밀크 사용. 비에이 드라이브와 묶기 좋음.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/富良野チーズ工房+ピッツァ" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1029209/">
+            <div class="food-card-top"><span class="food-card-name">ばすすとっぷ</span><span class="food-score">★ 3.36</span></div>
+            <div class="food-genre">경양식 · 비에이 드라이브인</div>
+            <div class="food-desc">비에이 언덕 드라이브 중 들르기 좋은 소박한 경양식. 현지 주민도 찾는 가정식 느낌의 런치.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/ばすすとっぷ+美瑛" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1022838/">
+            <div class="food-card-top"><span class="food-card-name">レストラン ふらのグリル</span><span class="food-score">★ 3.35</span></div>
+            <div class="food-genre">그릴 요리 · 후라노 와인</div>
+            <div class="food-desc">후라노 와인하우스 내 레스토랑. 홋카이도산 와규와 후라노 와인 페어링. 언덕 위 전망 좋음.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/ふらのグリル+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1010290/">
+            <div class="food-card-top"><span class="food-card-name">まるます</span><span class="food-score">★ 3.51</span></div>
+            <div class="food-genre">해산물 이자카야 · 저녁</div>
+            <div class="food-desc">후라노 시내 저녁 이자카야. 홋카이도 제철 해산물 안주와 지역 사케. 비에이 드라이브 후 저녁으로.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/まるます+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="note">나무들은 드라이브하며 순서대로. 흰수염폭포 + 아오이이케는 같은 구역.</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-gutter">
+      <div class="day-dot"></div>
+      <div class="day-num-big">04</div>
+      <div class="day-date-small">9월 4일 목</div>
+    </div>
+    <div class="day-body">
+      <div class="day-head">
+        <span class="day-name">도카치다케 → 삿포로 이동</span>
+        <span class="tag tag-nature">트레킹</span>
+        <span class="tag tag-move">이동일</span>
+      </div>
+      <div class="spots">
+        <div class="spot">
+          <span class="spot-icon">🏔️</span>
+          <div class="spot-text">
+            <div class="spot-name">도카치다케 전망대</div>
+            <div class="spot-desc">9월 초 단풍 시작 · 가벼운 트레킹 · 화산 지형</div>
+          </div>
+        </div>
+        <div class="spot">
+          <span class="spot-icon">🚗</span>
+          <div class="spot-text">
+            <div class="spot-name">삿포로로 이동</div>
+            <div class="spot-desc">약 2.5시간 · 저녁 삿포로 도착 · 체크인</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-embed">
+
+      </div>
+      <div class="lmap-wrap"><div id="lmap-day4" class="lmap"></div></div>
+      <script>
+      window.addEventListener('load', function() {
+        var m = L.map('lmap-day4', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:16}).addTo(m);
+        m.fitBounds([[43.06, 141.25], [43.57, 142.56]],{padding:[18,18]});
+      L.circleMarker([43.3411,142.3831],{radius:7,color:'#fff',fillColor:'#e76f51',fillOpacity:1,weight:2}).addTo(m).bindTooltip('후라노/비에이',{permanent:false,direction:'top'});
+      L.circleMarker([43.5247,142.5128],{radius:7,color:'#fff',fillColor:'#e8a87c',fillOpacity:1,weight:2}).addTo(m).bindTooltip('도카치다케',{permanent:false,direction:'top'});
+      L.circleMarker([43.0618,141.3545],{radius:7,color:'#fff',fillColor:'#2a9d8f',fillOpacity:1,weight:2}).addTo(m).bindTooltip('삿포로',{permanent:false,direction:'top'});
+        L.polyline([[43.3411, 142.3831], [43.5247, 142.5128], [43.0618, 141.3545]],{color:'#2a9d8f',weight:2.5,dashArray:'6,5',opacity:0.85}).addTo(m);
+      });
+      </script>
+      <a class="route-btn" href="https://maps.google.com/maps/dir/富良野市/十勝岳温泉/札幌市" target="_blank">🗺 구글맵에서 루트 보기 · 비에이 → 도카치다케 → 삿포로</a>
+
+      <div class="food-section">
+        <div class="food-header">— 삿포로 도착 저녁 추천</div>
+        <div class="food-cards">
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010303/1000031/">
+            <div class="food-card-top"><span class="food-card-name">さっぽろ純連 札幌店</span><span class="food-score">★ 3.76</span><span class="res-recommended">예약 추천</span></div>
+            <div class="food-genre">라멘 · 미소라멘 정통</div>
+            <div class="food-desc">삿포로 미소라멘 정통 순수미 계보. 진한 라드가 코팅한 한 그릇. 이동 피로 날려줄 든든한 저녁.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/さっぽろ純連+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010103/1004060/">
+            <div class="food-card-top"><span class="food-card-name">スープカリー スアゲ プラス</span><span class="food-score">★ 3.69</span></div>
+            <div class="food-genre">스프카레 · 수스키노 · 百名店</div>
+            <div class="food-desc">스프카레 百名店. 닭 다리+제철 채소 듬뿍. 수스키노 쇼핑 후 바로 들르기 딱.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/スープカリースアゲプラス+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010101/1004447/">
+            <div class="food-card-top"><span class="food-card-name">カリーハウス コロンボ</span><span class="food-score">★ 3.68</span></div>
+            <div class="food-genre">카레 · 삿포로 명가</div>
+            <div class="food-desc">삿포로 카레 명가. 진한 스파이스 블렌드. 쇼핑 전 든든한 점심.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/カリーハウスコロンボ+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010103/1039744/">
+            <div class="food-card-top"><span class="food-card-name">パフェ、珈琲、酒、佐藤</span><span class="food-score">★ 3.74</span></div>
+            <div class="food-genre">시메파르페 · 카페바 · 원조</div>
+            <div class="food-desc">삿포로 명물 시메파르페 원조 격 가게. 저녁 식사 후 파르페로 하루 마무리하는 삿포로 스타일.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/パフェ珈琲酒佐藤+札幌すすきの" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010303/1034678/">
+            <div class="food-card-top"><span class="food-card-name">MEN-EIJI HIRAGISHI BASE</span><span class="food-score">★ 3.71</span></div>
+            <div class="food-genre">라멘 · 百名店</div>
+            <div class="food-desc">삿포로 라멘 百名店. 어패류와 돈코츠 블렌드 독창적 스프. 줄 서는 집이지만 회전율 빠름.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/MEN-EIJI+HIRAGISHI+BASE+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010104/1003072/">
+            <div class="food-card-top"><span class="food-card-name">メディスンマン</span><span class="food-score">★ 3.70</span></div>
+            <div class="food-genre">스프카레 · 나카지마공원역</div>
+            <div class="food-desc">삿포로 스프카레 명가. 화·수요일 휴무 주의. 재료 듬뿍 큰 그릇. 매운맛 단계 선택 가능.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/メディスンマン+中島公園+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+        </div>
+      </div>
       <div class="hotel-section">
         <div class="hotel-hdr">🏨 숙소 — 삿포로 (확정)</div>
         <div class="hotel-grid">
@@ -756,15 +1078,15 @@ footer {
             </div>
         </div>
       </div>
-      <div class="note">오늘은 이동일. 가볍게 저녁만.</div>
+      <div class="note">오전에 도카치다케, 오후 삿포로 이동. 가벼운 산책 코스로.</div>
     </div>
   </div>
 
   <div class="day">
     <div class="day-gutter">
       <div class="day-dot"></div>
-      <div class="day-num-big">02</div>
-      <div class="day-date-small">9월 2일 화</div>
+      <div class="day-num-big">05</div>
+      <div class="day-date-small">9월 5일 금</div>
     </div>
     <div class="day-body">
       <div class="day-head">
@@ -794,14 +1116,14 @@ footer {
           </div>
         </div>
       </div>
-      
+
       <div class="map-embed">
-        
+
       </div>
-      <div class="lmap-wrap"><div id="lmap-day2" class="lmap"></div></div>
+      <div class="lmap-wrap"><div id="lmap-day5" class="lmap"></div></div>
       <script>
       window.addEventListener('load', function() {
-        var m = L.map('lmap-day2', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
+        var m = L.map('lmap-day5', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
         L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:16}).addTo(m);
         m.fitBounds([[43.0, 140.88], [43.32, 141.52]],{padding:[18,18]});
       L.circleMarker([43.0618,141.3545],{radius:7,color:'#fff',fillColor:'#e76f51',fillOpacity:1,weight:2}).addTo(m).bindTooltip('삿포로',{permanent:false,direction:'top'});
@@ -871,8 +1193,99 @@ footer {
   <div class="day">
     <div class="day-gutter">
       <div class="day-dot"></div>
-      <div class="day-num-big">03</div>
-      <div class="day-date-small">9월 3일 수</div>
+      <div class="day-num-big">06</div>
+      <div class="day-date-small">9월 6일 토</div>
+    </div>
+    <div class="day-body">
+      <div class="day-head">
+        <span class="day-name">삿포로 자유일</span>
+        <span class="tag tag-arrive">삿포로</span>
+      </div>
+      <div class="spots">
+        <div class="spot">
+          <span class="spot-icon">🍜</span>
+          <div class="spot-text">
+            <div class="spot-name">삿포로 맛집 탐방</div>
+            <div class="spot-desc">미소라멘 · 스프카레 · 징기스칸</div>
+          </div>
+        </div>
+        <div class="spot">
+          <span class="spot-icon">🏙️</span>
+          <div class="spot-text">
+            <div class="spot-name">오도리 공원 · 시내 산책</div>
+            <div class="spot-desc">삿포로 맥주 박물관 등</div>
+          </div>
+        </div>
+      </div>
+      <div class="food-section">
+        <div class="food-header">— 삿포로 맛집 풀코스</div>
+        <div class="food-cards">
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010102/1009680/">
+            <div class="food-card-top"><span class="food-card-name">手作りハンバーグ工房 Toshi</span><span class="food-score">★ 3.70</span></div>
+            <div class="food-genre">햄버그 스테이크 · 삿포로역 근처</div>
+            <div class="food-desc">소고기 100% 수제 햄버그 전문점. 삿포로역 근처. 육즙 가득.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/手作りハンバーグ工房Toshi+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010301/1024063/">
+            <div class="food-card-top"><span class="food-card-name">一文字カリー店</span><span class="food-score">★ 3.84</span></div>
+            <div class="food-genre">카레 · 삿포로 랭킹 2위</div>
+            <div class="food-desc">삿포로 카레 랭킹 2위. 특제 스파이스 블렌드 진한 카레. 쇼핑 전 점심.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/一文字カリー店+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010301/1009634/">
+            <div class="food-card-top"><span class="food-card-name">麺屋 菜々兵衛 本店</span><span class="food-score">★ 3.71</span></div>
+            <div class="food-genre">라멘 · 미소라멘 · 百名店</div>
+            <div class="food-desc">삿포로 미소라멘 百名店. 진한 미소와 버터의 조화. 재방문율 높음.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/麺屋菜々兵衛本店+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010103/1034478/">
+            <div class="food-card-top"><span class="food-card-name">いそのかづお</span><span class="food-score">★ 3.75</span></div>
+            <div class="food-genre">스시 · 수스키노 · 예약 필수</div>
+            <div class="food-desc">수스키노 수준급 스시 오마카세. 카운터 6석 소규모. 쇼핑 후 저녁 특별 코스.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/いそのかづお+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010303/1000134/">
+            <div class="food-card-top"><span class="food-card-name">すみれ 中の島本店</span><span class="food-score">★ 3.61</span><span class="res-required">예약 필수</span></div>
+            <div class="food-genre">라멘 · 百名店 선출</div>
+            <div class="food-desc">삿포로 미소라멘의 전설. 진한 돼지뼈 베이스에 버터 한 덩이. 줄 서는 집이지만 그만한 가치가 있음.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/すみれ+中の島本店+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+
+            <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010102/1057715/">
+            <div class="food-card-top"><span class="food-card-name">Japanese Ramen Noodle Lab Q</span><span class="food-score">★ 3.75</span><span class="res-recommended">예약 추천</span></div>
+            <div class="food-genre">라멘 · 삿포로역 근처 · 百名店</div>
+            <div class="food-desc">삿포로역 바로 근처. 독창적 라멘 실험실 콘셉트. 매번 바뀌는 한정 메뉴. 쇼핑 전 아침/점심으로.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/Japanese+Ramen+Noodle+Lab+Q+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+
+
+            <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010103/1000150/">
+            <div class="food-card-top"><span class="food-card-name">けやき すすきの本店</span><span class="food-score">★ 3.69</span></div>
+            <div class="food-genre">라멘 · 미소라멘 · 수스키노</div>
+            <div class="food-desc">스스키노 미소라멘 노포. 홋카이도 버터콘라멘 원조급. 쇼핑 후 저녁 한 그릇으로 딱.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/けやきすすきの本店+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+
+
+            <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010103/1004868/">
+            <div class="food-card-top"><span class="food-card-name">麺屋 雪風 すすきの店</span><span class="food-score">★ 3.69</span></div>
+            <div class="food-genre">라멘 · 미소라멘 · 수스키노</div>
+            <div class="food-desc">수스키노 미소라멘 인기 가게. 진한 미소 스프와 두꺼운 면. 늦게까지 영업하는 수스키노 위치.</div>
+            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/麺屋雪風+すすきの+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
+          </div>
+
+
+         </div>
+      </div>
+      <div class="note">삿포로 자유일 — 맛집·쇼핑·산책 자유롭게. 쇼핑은 아래 별도 목록 참고.</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-gutter">
+      <div class="day-dot"></div>
+      <div class="day-num-big">07</div>
+      <div class="day-date-small">9월 7일 일</div>
     </div>
     <div class="day-body">
       <div class="day-head">
@@ -896,14 +1309,14 @@ footer {
           </div>
         </div>
       </div>
-      
+
       <div class="map-embed">
-        
+
       </div>
-      <div class="lmap-wrap"><div id="lmap-day3" class="lmap"></div></div>
+      <div class="lmap-wrap"><div id="lmap-day7" class="lmap"></div></div>
       <script>
       window.addEventListener('load', function() {
-        var m = L.map('lmap-day3', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
+        var m = L.map('lmap-day7', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
         L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:16}).addTo(m);
         m.fitBounds([[42.38, 140.72], [43.18, 141.55]],{padding:[18,18]});
       L.circleMarker([43.0618,141.3545],{radius:7,color:'#fff',fillColor:'#e76f51',fillOpacity:1,weight:2}).addTo(m).bindTooltip('삿포로',{permanent:false,direction:'top'});
@@ -960,8 +1373,8 @@ footer {
   <div class="day">
     <div class="day-gutter">
       <div class="day-dot"></div>
-      <div class="day-num-big">04</div>
-      <div class="day-date-small">9월 4일 목</div>
+      <div class="day-num-big">08</div>
+      <div class="day-date-small">9월 8일 월</div>
     </div>
     <div class="day-body">
       <div class="day-head">
@@ -992,14 +1405,14 @@ footer {
           </div>
         </div>
       </div>
-      
+
       <div class="map-embed">
-        
+
       </div>
-      <div class="lmap-wrap"><div id="lmap-day4" class="lmap"></div></div>
+      <div class="lmap-wrap"><div id="lmap-day8" class="lmap"></div></div>
       <script>
       window.addEventListener('load', function() {
-        var m = L.map('lmap-day4', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
+        var m = L.map('lmap-day8', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
         L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:16}).addTo(m);
         m.fitBounds([[42.482, 141.178], [42.518, 141.21]],{padding:[18,18]});
       L.circleMarker([42.4986,141.1906],{radius:7,color:'#fff',fillColor:'#e76f51',fillOpacity:1,weight:2}).addTo(m).bindTooltip('료칸',{permanent:false,direction:'top'});
@@ -1033,442 +1446,7 @@ footer {
           </div>
         </div>
       </div>
-      <div class="note">료칸에서 도보로 모두 이동 가능. 차 필요 없는 날.</div>
-    </div>
-  </div>
-
-  <div class="day">
-    <div class="day-gutter">
-      <div class="day-dot"></div>
-      <div class="day-num-big">05</div>
-      <div class="day-date-small">9월 5일 금</div>
-    </div>
-    <div class="day-body">
-      <div class="day-head">
-        <span class="day-name">노보리베츠 → 후라노</span>
-        <span class="tag tag-move">이동일</span>
-        <span class="tag tag-nature">자연</span>
-      </div>
-      <div class="spots">
-        <div class="spot">
-          <span class="spot-icon">🌸</span>
-          <div class="spot-text">
-            <div class="spot-name">팜 토미타</div>
-            <div class="spot-desc">코스모스 · 라벤더 소프트크림 · 10:00~16:00</div>
-          </div>
-        </div>
-        <div class="spot">
-          <span class="spot-icon">🧀</span>
-          <div class="spot-text">
-            <div class="spot-name">후라노 치즈공방</div>
-            <div class="spot-desc">치즈 · 버터 체험 · 아이스크림</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="map-embed">
-        
-      </div>
-      <div class="lmap-wrap"><div id="lmap-day5" class="lmap"></div></div>
-      <script>
-      window.addEventListener('load', function() {
-        var m = L.map('lmap-day5', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:16}).addTo(m);
-        m.fitBounds([[42.38, 141.1], [43.58, 142.58]],{padding:[18,18]});
-      L.circleMarker([42.4986,141.1906],{radius:7,color:'#fff',fillColor:'#e76f51',fillOpacity:1,weight:2}).addTo(m).bindTooltip('노보리베츠',{permanent:false,direction:'top'});
-      L.circleMarker([43.4528,142.4644],{radius:7,color:'#fff',fillColor:'#e8a87c',fillOpacity:1,weight:2}).addTo(m).bindTooltip('팜 토미타',{permanent:false,direction:'top'});
-      L.circleMarker([43.3411,142.3831],{radius:7,color:'#fff',fillColor:'#2a9d8f',fillOpacity:1,weight:2}).addTo(m).bindTooltip('후라노',{permanent:false,direction:'top'});
-        L.polyline([[42.4986, 141.1906], [43.4528, 142.4644], [43.3411, 142.3831]],{color:'#2a9d8f',weight:2.5,dashArray:'6,5',opacity:0.85}).addTo(m);
-      });
-      </script>
-      <a class="route-btn" href="https://maps.google.com/maps/dir/登別温泉/ファーム富田+富良野/富良野市" target="_blank">🗺 구글맵에서 루트 보기 · 노보리베츠 → 팜토미타 → 후라노</a>
-
-      <div class="food-section">
-        <div class="food-header">— 후라노 추천 맛집</div>
-        <div class="food-cards">
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1000940/">
-            <div class="food-card-top"><span class="food-card-name">菓子工房フラノデリス</span><span class="food-score">★ 3.66</span></div>
-            <div class="food-genre">디저트 · 후라노 랭킹 1위</div>
-            <div class="food-desc">후라노 대표 디저트 가게. 홋카이도 식재 사용 케이크·구움 과자. 후라노 와인 초콜릿도 인기.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/フラノデリス+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1000063/">
-            <div class="food-card-top"><span class="food-card-name">唯我独尊</span><span class="food-score">★ 3.62</span></div>
-            <div class="food-genre">카레 · 후라노 명물 · 百名店</div>
-            <div class="food-desc">후라노 카레의 성지. 30년 이상 현지 사랑받는 집. 독특한 주문 방식. 저녁 도착 후 첫 밥으로 딱.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/唯我独尊+富良野市" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1002223/">
-            <div class="food-card-top"><span class="food-card-name">ファーム富田</span><span class="food-score">★ 3.59</span></div>
-            <div class="food-genre">소프트크림 · 라벤더 명소</div>
-            <div class="food-desc">팜 토미타 내 라벤더 소프트아이스크림 원조. 9월에도 코스모스 핀 밭에서. 야외 즉석 판매.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/ファーム富田+ソフトクリーム" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1016743/">
-            <div class="food-card-top"><span class="food-card-name">ふらのや</span><span class="food-score">★ 3.57</span></div>
-            <div class="food-genre">후라노 향토 요리 · 저녁 식사</div>
-            <div class="food-desc">후라노 현지 식재료 중심 향토 요리. 후라노 와인과 홋카이도 소고기 조합. 가족 단위 저녁 식사.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/ふらのや+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1004122/">
-            <div class="food-card-top"><span class="food-card-name">自家焙煎珈琲店 Gosh</span><span class="food-score">★ 3.54</span></div>
-            <div class="food-genre">자가 로스팅 커피 · 카페</div>
-            <div class="food-desc">후라노·비에이 지역 자가 로스팅 커피 명가. 드라이브 중 한 잔 쉬어가기 좋음. 조용한 분위기.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/珈琲Gosh+美瑛+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1000298/">
-            <div class="food-card-top"><span class="food-card-name">くまげら</span><span class="food-score">★ 3.52</span></div>
-            <div class="food-genre">향토 요리 · 이자카야 · 저녁</div>
-            <div class="food-desc">후라노 지역 인기 향토 이자카야. 홋카이도 산 사슴·곰고기 등 독특한 식재도 취급. 현지 분위기.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/くまげら+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1007772/">
-            <div class="food-card-top"><span class="food-card-name">富良野チーズ工房 アイスミルク工房</span><span class="food-score">★ 3.50</span></div>
-            <div class="food-genre">아이스크림 · 치즈공방</div>
-            <div class="food-desc">치즈공방 내 아이스크림 공방. 신선 우유 아이스크림 현장 제조. 팜 토미타와 동선 묶기 좋음.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/富良野チーズ工房" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="hotel-section">
-        <div class="hotel-hdr">🏨 숙소 — 후라노 (확정)</div>
-        <div class="hotel-grid">
-          <div class="hotel-card" onclick="window.open('https://www.airbnb.co.kr/rooms/1284346822614586800?source_impression_id=p3_1774703731_P3oTlVbxnLUB-it3','_blank')">
-              <div class="hcard-top">
-                <span class="hcard-name">에어비앤비 (후라노)</span>
-                <span class="hcard-grade">숙소 확정</span>
-              </div>
-              <div class="hcard-desc">에어비앤비 숙소. 상세 정보는 예약 확인서 참고.</div>
-              <div class="hcard-links">
-                <a class="hcard-bk" href="https://www.airbnb.co.kr/rooms/1284346822614586800?source_impression_id=p3_1774703731_P3oTlVbxnLUB-it3" target="_blank" onclick="event.stopPropagation()">🏠 에어비앤비</a>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="note">노보리베츠 → 후라노 약 2.5시간. 도착 후 팜 토미타 방문.</div>
-    </div>
-  </div>
-
-  <div class="day">
-    <div class="day-gutter">
-      <div class="day-dot"></div>
-      <div class="day-num-big">06</div>
-      <div class="day-date-small">9월 6일 토</div>
-    </div>
-    <div class="day-body">
-      <div class="day-head">
-        <span class="day-name">비에이 드라이브</span>
-        <span class="tag tag-nature">자연</span>
-      </div>
-      <div class="spots">
-        <div class="spot">
-          <span class="spot-icon">🚲</span>
-          <div class="spot-text">
-            <div class="spot-name">비에이 전기자전거 대여</div>
-            <div class="spot-desc">비에이역 앞 렌탈샵 · 전기자전거 3,000~3,500엔/일 · 세븐스타~켄과 메리 구간 추천 · 🔋아빠 강추</div>
-          </div>
-        </div>
-        <div class="spot">
-          <span class="spot-icon">🌲</span>
-          <div class="spot-text">
-            <div class="spot-name">세븐스타 나무</div>
-            <div class="spot-desc">패치워크 로드 시작 · 파노라마 구릉 뷰</div>
-          </div>
-        </div>
-        <div class="spot">
-          <span class="spot-icon">🌳</span>
-          <div class="spot-text">
-            <div class="spot-name">켄과 메리의 나무</div>
-            <div class="spot-desc">포플러 나무 · 닛산 광고 배경</div>
-          </div>
-        </div>
-        <div class="spot">
-          <span class="spot-icon">🌿</span>
-          <div class="spot-text">
-            <div class="spot-name">마일드세븐 언덕</div>
-            <div class="spot-desc">탁 트인 구릉 전망</div>
-          </div>
-        </div>
-        <div class="spot">
-          <span class="spot-icon">🎄</span>
-          <div class="spot-text">
-            <div class="spot-name">크리스마스트리 나무</div>
-            <div class="spot-desc">일몰 무렵 방문 추천</div>
-          </div>
-        </div>
-        <div class="spot">
-          <span class="spot-icon">💧</span>
-          <div class="spot-text">
-            <div class="spot-name">흰수염 폭포</div>
-            <div class="spot-desc">코발트블루 물줄기 · 아오이이케 바로 옆</div>
-          </div>
-        </div>
-        <div class="spot">
-          <span class="spot-icon">🔵</span>
-          <div class="spot-text">
-            <div class="spot-name">아오이이케 (청의 호수)</div>
-            <div class="spot-desc">8:00~21:00 · 코발트블루 호수</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="map-embed">
-        
-      </div>
-      <div class="lmap-wrap"><div id="lmap-day6" class="lmap"></div></div>
-      <script>
-      window.addEventListener('load', function() {
-        var m = L.map('lmap-day6', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:16}).addTo(m);
-        m.fitBounds([[43.28, 142.34], [43.68, 142.56]],{padding:[18,18]});
-      L.circleMarker([43.3411,142.3831],{radius:7,color:'#fff',fillColor:'#e76f51',fillOpacity:1,weight:2}).addTo(m).bindTooltip('후라노',{permanent:false,direction:'top'});
-      L.circleMarker([43.5897,142.4622],{radius:7,color:'#fff',fillColor:'#e8a87c',fillOpacity:1,weight:2}).addTo(m).bindTooltip('세븐스타 나무',{permanent:false,direction:'top'});
-      L.circleMarker([43.6078,142.4992],{radius:7,color:'#fff',fillColor:'#2a9d8f',fillOpacity:1,weight:2}).addTo(m).bindTooltip('아오이이케',{permanent:false,direction:'top'});
-        L.polyline([[43.3411,142.3831],[43.5897,142.4622],[43.6078,142.4992],[43.3411,142.3831]],{color:'#2a9d8f',weight:2.5,dashArray:'6,5',opacity:0.85}).addTo(m);
-      });
-      </script>
-      <a class="route-btn" href="https://maps.google.com/maps/dir/富良野市/セブンスターの木/ケンとメリーの木/白ひげの滝/青い池美瑛/富良野市" target="_blank">🗺 구글맵에서 루트 보기 · 후라노 → 비에이 드라이브</a>
-
-      <div class="food-section">
-        <div class="food-header">— 비에이·후라노 드라이브 중 추천 맛집</div>
-        <div class="food-cards">
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1004122/">
-            <div class="food-card-top"><span class="food-card-name">自家焙煎珈琲店 Gosh</span><span class="food-score">★ 3.54</span></div>
-            <div class="food-genre">카페 · 자가 로스팅 커피</div>
-            <div class="food-desc">후라노·비에이 지역 자가 로스팅 커피 명가. 드라이브 중 한 잔 쉬어가기 좋음. 조용한 분위기.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/珈琲Gosh+美瑛+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1055790/">
-            <div class="food-card-top"><span class="food-card-name">フェルム ラ・テール 美瑛</span><span class="food-score">★ 3.41</span></div>
-            <div class="food-genre">베이커리 · 카페 · 비에이 직영</div>
-            <div class="food-desc">비에이 농장 직영 베이커리 카페. 비에이 밀 빵·스콘·소프트크림. 언덕 드라이브 중 점심으로.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/フェルムラテール美瑛" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1007771/">
-            <div class="food-card-top"><span class="food-card-name">富良野チーズ工房 ピッツァ工房</span><span class="food-score">★ 3.48</span></div>
-            <div class="food-genre">피자 · 치즈공방</div>
-            <div class="food-desc">후라노 치즈공방 내 피자 공방. 현장에서 직접 구운 피자. 홋카이도 밀크 사용. 비에이 드라이브와 묶기 좋음.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/富良野チーズ工房+ピッツァ" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1029209/">
-            <div class="food-card-top"><span class="food-card-name">ばすすとっぷ</span><span class="food-score">★ 3.36</span></div>
-            <div class="food-genre">경양식 · 비에이 드라이브인</div>
-            <div class="food-desc">비에이 언덕 드라이브 중 들르기 좋은 소박한 경양식. 현지 주민도 찾는 가정식 느낌의 런치.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/ばすすとっぷ+美瑛" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1022838/">
-            <div class="food-card-top"><span class="food-card-name">レストラン ふらのグリル</span><span class="food-score">★ 3.35</span></div>
-            <div class="food-genre">그릴 요리 · 후라노 와인</div>
-            <div class="food-desc">후라노 와인하우스 내 레스토랑. 홋카이도산 와규와 후라노 와인 페어링. 언덕 위 전망 좋음.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/ふらのグリル+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0104/A010403/1010290/">
-            <div class="food-card-top"><span class="food-card-name">まるます</span><span class="food-score">★ 3.51</span></div>
-            <div class="food-genre">해산물 이자카야 · 저녁</div>
-            <div class="food-desc">후라노 시내 저녁 이자카야. 홋카이도 제철 해산물 안주와 지역 사케. 비에이 드라이브 후 저녁으로.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/まるます+富良野" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="note">나무들은 드라이브하며 순서대로. 흰수염폭포 + 아오이이케는 같은 구역.</div>
-    </div>
-  </div>
-
-  <div class="day">
-    <div class="day-gutter">
-      <div class="day-dot"></div>
-      <div class="day-num-big">07</div>
-      <div class="day-date-small">9월 7일 일</div>
-    </div>
-    <div class="day-body">
-      <div class="day-head">
-        <span class="day-name">도카치다케 → 삿포로 이동</span>
-        <span class="tag tag-nature">트레킹</span>
-        <span class="tag tag-move">이동일</span>
-      </div>
-      <div class="spots">
-        <div class="spot">
-          <span class="spot-icon">🏔️</span>
-          <div class="spot-text">
-            <div class="spot-name">도카치다케 전망대</div>
-            <div class="spot-desc">9월 초 단풍 시작 · 가벼운 트레킹 · 화산 지형</div>
-          </div>
-        </div>
-        <div class="spot">
-          <span class="spot-icon">🚗</span>
-          <div class="spot-text">
-            <div class="spot-name">삿포로로 이동</div>
-            <div class="spot-desc">약 2.5시간 · 저녁 삿포로 도착 · 체크인</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="map-embed">
-        
-      </div>
-      <div class="lmap-wrap"><div id="lmap-day7" class="lmap"></div></div>
-      <script>
-      window.addEventListener('load', function() {
-        var m = L.map('lmap-day7', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:16}).addTo(m);
-        m.fitBounds([[43.06, 141.25], [43.57, 142.56]],{padding:[18,18]});
-      L.circleMarker([43.3411,142.3831],{radius:7,color:'#fff',fillColor:'#e76f51',fillOpacity:1,weight:2}).addTo(m).bindTooltip('후라노/비에이',{permanent:false,direction:'top'});
-      L.circleMarker([43.5247,142.5128],{radius:7,color:'#fff',fillColor:'#e8a87c',fillOpacity:1,weight:2}).addTo(m).bindTooltip('도카치다케',{permanent:false,direction:'top'});
-      L.circleMarker([43.0618,141.3545],{radius:7,color:'#fff',fillColor:'#2a9d8f',fillOpacity:1,weight:2}).addTo(m).bindTooltip('삿포로',{permanent:false,direction:'top'});
-        L.polyline([[43.3411, 142.3831], [43.5247, 142.5128], [43.0618, 141.3545]],{color:'#2a9d8f',weight:2.5,dashArray:'6,5',opacity:0.85}).addTo(m);
-      });
-      </script>
-      <a class="route-btn" href="https://maps.google.com/maps/dir/富良野市/十勝岳温泉/札幌市" target="_blank">🗺 구글맵에서 루트 보기 · 비에이 → 도카치다케 → 삿포로</a>
-
-      <div class="food-section">
-        <div class="food-header">— 삿포로 도착 저녁 추천</div>
-        <div class="food-cards">
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010303/1000031/">
-            <div class="food-card-top"><span class="food-card-name">さっぽろ純連 札幌店</span><span class="food-score">★ 3.76</span><span class="res-recommended">예약 추천</span></div>
-            <div class="food-genre">라멘 · 미소라멘 정통</div>
-            <div class="food-desc">삿포로 미소라멘 정통 순수미 계보. 진한 라드가 코팅한 한 그릇. 이동 피로 날려줄 든든한 저녁.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/さっぽろ純連+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010103/1004060/">
-            <div class="food-card-top"><span class="food-card-name">スープカリー スアゲ プラス</span><span class="food-score">★ 3.69</span></div>
-            <div class="food-genre">스프카레 · 수스키노 · 百名店</div>
-            <div class="food-desc">스프카레 百名店. 닭 다리+제철 채소 듬뿍. 수스키노 쇼핑 후 바로 들르기 딱.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/スープカリースアゲプラス+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010101/1004447/">
-            <div class="food-card-top"><span class="food-card-name">カリーハウス コロンボ</span><span class="food-score">★ 3.68</span></div>
-            <div class="food-genre">카레 · 삿포로 명가</div>
-            <div class="food-desc">삿포로 카레 명가. 진한 스파이스 블렌드. 쇼핑 전 든든한 점심.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/カリーハウスコロンボ+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010103/1039744/">
-            <div class="food-card-top"><span class="food-card-name">パフェ、珈琲、酒、佐藤</span><span class="food-score">★ 3.74</span></div>
-            <div class="food-genre">시메파르페 · 카페바 · 원조</div>
-            <div class="food-desc">삿포로 명물 시메파르페 원조 격 가게. 저녁 식사 후 파르페로 하루 마무리하는 삿포로 스타일.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/パフェ珈琲酒佐藤+札幌すすきの" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010303/1034678/">
-            <div class="food-card-top"><span class="food-card-name">MEN-EIJI HIRAGISHI BASE</span><span class="food-score">★ 3.71</span></div>
-            <div class="food-genre">라멘 · 百名店</div>
-            <div class="food-desc">삿포로 라멘 百名店. 어패류와 돈코츠 블렌드 독창적 스프. 줄 서는 집이지만 회전율 빠름.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/MEN-EIJI+HIRAGISHI+BASE+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010104/1003072/">
-            <div class="food-card-top"><span class="food-card-name">メディスンマン</span><span class="food-score">★ 3.70</span></div>
-            <div class="food-genre">스프카레 · 나카지마공원역</div>
-            <div class="food-desc">삿포로 스프카레 명가. 화·수요일 휴무 주의. 재료 듬뿍 큰 그릇. 매운맛 단계 선택 가능.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/メディスンマン+中島公園+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="hotel-section">
-        <div class="hotel-hdr">🏨 숙소 — 삿포로 (확정)</div>
-        <div class="hotel-grid">
-          <div class="hotel-card" onclick="window.open('https://www.booking.com/hotel/jp/mitsui-garden-hotel-sapporo-west.ko.html','_blank')">
-              <div class="hcard-top">
-                <span class="hcard-name">미쓰이 가든 호텔 삿포로 웨스트</span>
-                <span class="hcard-grade">3성급</span>
-              </div>
-              <div class="hcard-desc">2023년 개업. 삿포로역 도보 5분. 대욕장 완비. 깔끔한 신축 시설.</div>
-              <div class="hcard-links">
-                <a class="hcard-gmap" href="https://maps.google.com/maps/search/三井ガーデンホテル札幌ウエスト" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a>
-                <a class="hcard-bk" href="https://www.booking.com/hotel/jp/mitsui-garden-hotel-sapporo-west.ko.html" target="_blank" onclick="event.stopPropagation()">🏨 부킹닷컴</a>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="note">오전에 도카치다케, 오후 삿포로 이동. 가벼운 산책 코스로.</div>
-    </div>
-  </div>
-
-  <div class="day">
-    <div class="day-gutter">
-      <div class="day-dot"></div>
-      <div class="day-num-big">08</div>
-      <div class="day-date-small">9월 8일 월</div>
-    </div>
-    <div class="day-body">
-      <div class="day-head">
-        <span class="day-name">삿포로 자유일</span>
-        <span class="tag tag-arrive">삿포로</span>
-      </div>
-      <div class="spots">
-        <div class="spot">
-          <span class="spot-icon">🍜</span>
-          <div class="spot-text">
-            <div class="spot-name">삿포로 맛집 탐방</div>
-            <div class="spot-desc">미소라멘 · 스프카레 · 징기스칸</div>
-          </div>
-        </div>
-        <div class="spot">
-          <span class="spot-icon">🏙️</span>
-          <div class="spot-text">
-            <div class="spot-name">오도리 공원 · 시내 산책</div>
-            <div class="spot-desc">삿포로 맥주 박물관 등</div>
-          </div>
-        </div>
-      </div>
-      <div class="food-section">
-        <div class="food-header">— 삿포로 맛집 풀코스</div>
-        <div class="food-cards">
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010102/1009680/">
-            <div class="food-card-top"><span class="food-card-name">手作りハンバーグ工房 Toshi</span><span class="food-score">★ 3.70</span></div>
-            <div class="food-genre">햄버그 스테이크 · 삿포로역 근처</div>
-            <div class="food-desc">소고기 100% 수제 햄버그 전문점. 삿포로역 근처. 육즙 가득.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/手作りハンバーグ工房Toshi+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010301/1024063/">
-            <div class="food-card-top"><span class="food-card-name">一文字カリー店</span><span class="food-score">★ 3.84</span></div>
-            <div class="food-genre">카레 · 삿포로 랭킹 2위</div>
-            <div class="food-desc">삿포로 카레 랭킹 2위. 특제 스파이스 블렌드 진한 카레. 쇼핑 전 점심.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/一文字カリー店+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010301/1009634/">
-            <div class="food-card-top"><span class="food-card-name">麺屋 菜々兵衛 本店</span><span class="food-score">★ 3.71</span></div>
-            <div class="food-genre">라멘 · 미소라멘 · 百名店</div>
-            <div class="food-desc">삿포로 미소라멘 百名店. 진한 미소와 버터의 조화. 재방문율 높음.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/麺屋菜々兵衛本店+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010103/1034478/">
-            <div class="food-card-top"><span class="food-card-name">いそのかづお</span><span class="food-score">★ 3.75</span></div>
-            <div class="food-genre">스시 · 수스키노 · 예약 필수</div>
-            <div class="food-desc">수스키노 수준급 스시 오마카세. 카운터 6석 소규모. 쇼핑 후 저녁 특별 코스.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/いそのかづお+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-          <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010102/1009680/">
-            <div class="food-card-top"><span class="food-card-name">手作りハンバーグ工房 Toshi</span><span class="food-score">★ 3.70</span></div>
-            <div class="food-genre">햄버그 스테이크 · 삿포로역 근처</div>
-            <div class="food-desc">소고기 100% 수제 햄버그. 삿포로역 도보권. 쇼핑 전 든든한 점심.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/手作りハンバーグ工房Toshi+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-        
-            <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010102/1057715/">
-            <div class="food-card-top"><span class="food-card-name">Japanese Ramen Noodle Lab Q</span><span class="food-score">★ 3.75</span><span class="res-recommended">예약 추천</span></div>
-            <div class="food-genre">라멘 · 삿포로역 근처 · 百名店</div>
-            <div class="food-desc">삿포로역 바로 근처. 독창적 라멘 실험실 콘셉트. 매번 바뀌는 한정 메뉴. 쇼핑 전 아침/점심으로.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/Japanese+Ramen+Noodle+Lab+Q+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-         
-
-            <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010103/1000150/">
-            <div class="food-card-top"><span class="food-card-name">けやき すすきの本店</span><span class="food-score">★ 3.69</span></div>
-            <div class="food-genre">라멘 · 미소라멘 · 수스키노</div>
-            <div class="food-desc">스스키노 미소라멘 노포. 홋카이도 버터콘라멘 원조급. 쇼핑 후 저녁 한 그릇으로 딱.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/けやきすすきの本店+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-         
-
-            <div class="food-card" data-href="https://tabelog.com/hokkaido/A0101/A010103/1004868/">
-            <div class="food-card-top"><span class="food-card-name">麺屋 雪風 すすきの店</span><span class="food-score">★ 3.69</span></div>
-            <div class="food-genre">라멘 · 미소라멘 · 수스키노</div>
-            <div class="food-desc">수스키노 미소라멘 인기 가게. 진한 미소 스프와 두꺼운 면. 늦게까지 영업하는 수스키노 위치.</div>
-            <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/麺屋雪風+すすきの+札幌" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
-          </div>
-         
-
-         </div>
-      </div>
-      <div class="note">쇼핑은 아래 별도 목록 참고. 모든 매장 월요일 오픈 ✅</div>
+      <div class="note">료칸에서 도보로 모두 이동 가능. 차 필요 없는 날. 내일 귀국 전 마지막 온천 여유롭게.</div>
     </div>
   </div>
 
@@ -1488,33 +1466,33 @@ footer {
           <span class="spot-icon">🛒</span>
           <div class="spot-text">
             <div class="spot-name">오전 자유 시간</div>
-            <div class="spot-desc">편의점 간식 사재기 · 공항 면세점</div>
+            <div class="spot-desc">노보리베츠 온천가 산책 · 기념품 쇼핑</div>
           </div>
         </div>
         <div class="spot">
           <span class="spot-icon">✈️</span>
           <div class="spot-text">
             <div class="spot-name">신치토세 공항 출발 16:00</div>
-            <div class="spot-desc">공항까지 약 1시간 · 오후 1시 출발 권장</div>
+            <div class="spot-desc">노보리베츠 → 공항 약 1시간 · 오후 1시 출발 권장</div>
           </div>
         </div>
       </div>
-      
+
       <div class="map-embed">
-        
+
       </div>
       <div class="lmap-wrap"><div id="lmap-day9" class="lmap"></div></div>
       <script>
       window.addEventListener('load', function() {
         var m = L.map('lmap-day9', {zoomControl:false,scrollWheelZoom:false,dragging:false,attributionControl:false});
         L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:16}).addTo(m);
-        m.fitBounds([[42.65, 141.2], [43.18, 141.85]],{padding:[18,18]});
-      L.circleMarker([43.0618,141.3545],{radius:7,color:'#fff',fillColor:'#e76f51',fillOpacity:1,weight:2}).addTo(m).bindTooltip('삿포로',{permanent:false,direction:'top'});
+        m.fitBounds([[42.42, 141.1], [42.85, 141.78]],{padding:[18,18]});
+      L.circleMarker([42.4986,141.1906],{radius:7,color:'#fff',fillColor:'#e76f51',fillOpacity:1,weight:2}).addTo(m).bindTooltip('노보리베츠',{permanent:false,direction:'top'});
       L.circleMarker([42.7751,141.6929],{radius:7,color:'#fff',fillColor:'#2a9d8f',fillOpacity:1,weight:2}).addTo(m).bindTooltip('신치토세 공항',{permanent:false,direction:'top'});
-        L.polyline([[43.0618, 141.3545], [42.7751, 141.6929]],{color:'#2a9d8f',weight:2.5,dashArray:'6,5',opacity:0.85}).addTo(m);
+        L.polyline([[42.4986, 141.1906], [42.7751, 141.6929]],{color:'#2a9d8f',weight:2.5,dashArray:'6,5',opacity:0.85}).addTo(m);
       });
       </script>
-      <a class="route-btn" href="https://maps.google.com/maps/dir/札幌市/新千歳空港" target="_blank">🗺 구글맵에서 루트 보기 · 삿포로 → 신치토세</a>
+      <a class="route-btn" href="https://maps.google.com/maps/dir/登別温泉/新千歳空港" target="_blank">🗺 구글맵에서 루트 보기 · 노보리베츠 → 신치토세</a>
 
       <div class="food-section">
         <div class="food-header">— 공항 안에서 마지막 한 끼</div>
@@ -1537,14 +1515,14 @@ footer {
             <div class="food-desc">홋카이도 우유 카스텔라 공항 명물. 촉촉한 밀크 카스텔라. 귀국 선물로 딱.</div>
             <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/北海道牛乳カステラ+新千歳空港" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
           </div>
-        
+
             <div class="food-card" data-href="https://tabelog.com/hokkaido/A0107/A010701/1034722/">
             <div class="food-card-top"><span class="food-card-name">美瑛選果 新千歳空港店</span><span class="food-score">★ 3.63</span></div>
             <div class="food-genre">베이커리 · 직판장 · 공항</div>
             <div class="food-desc">비에이 직영 농협 공항점. 비에이 밀 빵·채소 가공품. 귀국 전 마지막 홋카이도 식재 쇼핑.</div>
             <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/美瑛選果+新千歳空港" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
           </div>
-         
+
 
             <div class="food-card" data-href="https://tabelog.com/hokkaido/A0107/A010701/1047747/">
             <div class="food-card-top"><span class="food-card-name">らーめん空 新千歳空港店</span><span class="food-score">★ 3.58</span></div>
@@ -1552,7 +1530,7 @@ footer {
             <div class="food-desc">신치토세 공항 내 라멘 가게. 홋카이도 미소·시오·쇼유 3종. 탑승 전 마지막 홋카이도 라멘 한 그릇.</div>
             <div class="food-card-links"><a class="gmap-link" href="https://maps.google.com/maps/search/らーめん空+新千歳空港" target="_blank" onclick="event.stopPropagation()">📍 구글맵</a></div>
           </div>
-         
+
 
          </div>
       </div>
@@ -1566,7 +1544,7 @@ footer {
   <div class="shopping-header">
     <div class="shop-eyebrow">— 쇼핑 리스트</div>
     <h2>삿포로 쇼핑</h2>
-    <div class="shop-sub">9/1 (월) 저녁 · 9/8 (월) 종일 · 모든 매장 월요일 오픈</div>
+    <div class="shop-sub">9/4 (목) 저녁 · 9/5 (금) · 9/6 (토) · 삿포로 3박 동안</div>
   </div>
 
   <div class="shop-grid">
@@ -1577,7 +1555,7 @@ footer {
       </div>
       <div class="shop-addr">南2条西1丁目7-2</div>
       <div class="shop-desc">도쿄에서 얌전한 거 건진 브랜드 직영점. 셔츠류 타겟.</div>
-      <div class="shop-hours">11:00~20:00 · <span class="closed">화요일 휴무</span> → <span class="ok">9/1(월) 방문 추천</span></div>
+      <div class="shop-hours">11:00~20:00 · <span class="closed">화요일 휴무</span> → <span class="ok">9/4(목)~9/6(토) 방문 가능</span></div>
     </a>
 
     <a class="shop-card" href="https://south2west8.com/stores.html" target="_blank">
@@ -1597,7 +1575,7 @@ footer {
       </div>
       <div class="shop-addr">南3条西9丁目998-5</div>
       <div class="shop-desc">반팔티, 워크셔츠 라인 좋음. 절제된 아메카지.</div>
-      <div class="shop-hours">11:00~20:00 · <span class="closed">목요일 휴무</span> · <span class="ok">9/8(월) OK ✅</span></div>
+      <div class="shop-hours">11:00~20:00 · <span class="closed">목요일 휴무</span> · <span class="ok">9/5(금)·9/6(토) OK ✅</span></div>
     </a>
 
     <a class="shop-card" href="https://www.beams.co.jp/en/shop/sp/" target="_blank">
@@ -1634,7 +1612,7 @@ footer {
   <div class="route-box">
     <strong>A코스 (서쪽)</strong> S2W8 → WAREHOUSE → FLAMINGO — 같은 블록, 도보 이동 가능<br>
     <strong>B코스 (동쪽)</strong> BEAMS 스텔라플레이스 → 파르코 (UA) → BEAMS 본점 → KAPITAL<br>
-    9/1(월) 저녁에 KAPITAL 먼저 들르면 9/8에 여유 생김.
+    9/4(목) 도착 저녁에 KAPITAL 먼저 들르면 9/5~6에 여유 생김.
   </div>
 </div>
 
